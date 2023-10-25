@@ -1,0 +1,139 @@
+.enteredPasswords {
+  background-color: #5763a5;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2px;
+  border-radius: 2px;
+  height: 25px;
+  width: 30%;
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+#searchIcon {
+  width: 20px;
+}
+
+.countSec {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.countSec h1 {
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  margin-right: 2px;
+}
+
+.countWrap {
+  border: 1px solid white;
+  border-radius: 70%;
+  height: 20px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countWrap p {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.showBar input {
+  margin-top: 5px;
+}
+
+.showBar p label {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.side p {
+  margin: 0;
+  color: white;
+}
+
+.initial {
+  background-color: green;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 3px;
+}
+
+.initial p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.initialWrap {
+  display: flex;
+  align-items: center;
+  /* margin-right: 1px; */
+  width: 100%;
+}
+
+.displayBar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.displayBox {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.delImg {
+  width: 15px;
+}
+
+@media (max-width: 575px) {
+  .displayBar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .displayBox {
+    width: 100%;
+  }
+}

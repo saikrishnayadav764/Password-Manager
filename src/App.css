@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+
+.noDisplay {
+  display: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  background-color: #9ba9eb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+
+#logo {
+  width: 100px;
+}
+
+.navbar {
+  /* padding: 2%; */
+  margin-bottom: 10px;
+}
+
+.formWrap {
+  background-color: #5763a5;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+.inp {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 7px;
+  border-radius: 3px;
+}
+
+.inp input {
+  width: 80%;
+  border: none;
+  /* margin: 7px; */
+  outline: none;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 3%;
+  border-radius: 10px;
+  background-color: #454f84;
+  margin-right: 2%;
+}
+
+.addHead {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.im {
+  width: 4vh;
+  height: 4vh;
+  /* border-right: 1px solid #94a3b8; */
+}
+
+.submitWrap {
+  text-align: right;
+}
+
+.submit {
+  background-color: #0b69ff;
+  border: none;
+  padding: 4px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 3px;
+  color: white;
+}
+
+.passImage {
+  width: 50%;
+  height: 350px;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/password-manager-sm-img.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 575px) {
+  .formWrap {
+    flex-direction: column;
+  }
+
+  .wrap {
+    order: 2;
+    width: 100%;
+  }
+  .passImage {
+    order: 1;
+    width: 100%;
+  }
+}
+
+.enteredPasswords {
+  background-color: #5763a5;
+  width: 100%;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 2px;
+  border-radius: 2px;
+  height: 25px;
+  width: 30%;
+}
+
+.searchBar input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+#searchIcon {
+  width: 20px;
+}
+
+.countSec {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.countSec h1 {
+  font-size: 1.2rem;
+  padding: 0;
+  margin: 0;
+  margin-right: 2px;
+}
+
+.countWrap {
+  border: 1px solid white;
+  border-radius: 70%;
+  height: 20px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countWrap p {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.showBar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.showBar input {
+  margin-top: 5px;
+}
+
+.showBar p label {
+  padding: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.side p {
+  margin: 0;
+  color: white;
+}
+
+.initial {
+  background-color: green;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.initial p {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.initialWrap {
+  display: flex;
+  align-items: center;
+  /* margin-right: 1px; */
+  width: 100%;
+}
+
+.displayBar {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.displayBox {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  width: 30%;
+  align-items: center;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  margin-right: 3%;
+  margin-bottom: 3%;
+}
+
+.starName {
+  width: 100px;
+}
+
+.delImg {
+  width: 15px;
+}
+
+@media (max-width: 575px) {
+  .displayBar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .displayBox {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.delBtn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+
+.BlueSapphire {
+  background-color: #0b69ff;
+}
+
+.CornflowerBlue {
+  background-color: #7683cb;
+}
+
+.Amber {
+  background-color: #f59e0b;
+}
+
+.EmeraldGreen {
+  background-color: #10b981;
+}
+
+.BurntOrange {
+  background-color: #f97316;
+}
+
+.Teal {
+  background-color: #14b8a6;
+}
+
+.Crimson {
+  background-color: #b91c1c;
+}
+
+.DodgerBlue {
+  background-color: #0ea5e9;
+}
+
+.erroBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.errorImage {
+  width: 30vh;
+}
